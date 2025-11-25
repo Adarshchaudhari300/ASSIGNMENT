@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Token Trading Table - Axiom Trade Clone',
-  description: 'A pixel-perfect replica of Axiom Trade\'s token discovery table with real-time updates',
+  description: 'A pixel-perfect replica of Axiom Trade token discovery table with real-time updates',
   keywords: ['crypto', 'tokens', 'trading', 'defi', 'web3'],
   authors: [{ name: 'Your Name' }],
   viewport: {
