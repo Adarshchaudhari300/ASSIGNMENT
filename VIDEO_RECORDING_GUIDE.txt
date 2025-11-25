@@ -1,0 +1,284 @@
+VIDEO RECORDING GUIDE (1-2 Minutes)
+====================================
+
+This guide helps you create a professional demo video for your YouTube submission.
+
+VIDEO REQUIREMENTS
+------------------
+Duration: 1-2 minutes
+Platform: YouTube (public or unlisted)
+Quality: 720p or higher recommended
+Audio: Optional (can be silent or with explanation)
+
+WHAT TO SHOW
+------------
+
+PART 1: DESKTOP VIEW (30-40 seconds)
+-------------------------------------
+1. Show the landing page
+   - Full table view
+   - Clean, professional design
+   - All token columns visible
+
+2. Demonstrate sorting
+   - Click on "Price" header
+   - Click again to reverse
+   - Show arrow indicators changing
+   - Click "Market Cap" header
+   - Show data reordering
+
+3. Demonstrate filtering
+   - Click "Filters" button
+   - Select "New Pairs"
+   - Show filtered results
+   - Select "Verified Only"
+   - Show combined filters
+   - Click "Clear All"
+
+4. Demonstrate search
+   - Type in search box
+   - Show instant filtering
+   - Clear search
+
+5. Show interactive elements
+   - Hover over verified badge (tooltip appears)
+   - Click market cap value (popover opens)
+   - Click holder count (modal opens)
+   - Close modal
+   - Copy token address (show copied message)
+
+PART 2: REAL-TIME UPDATES (15-20 seconds)
+------------------------------------------
+1. Pause for a moment
+2. Point out or circle a few prices
+3. Let viewer see prices update
+4. Highlight the flash animations:
+   - Green flash for price increase
+   - Red flash for price decrease
+5. Show smooth color transitions
+
+PART 3: RESPONSIVE DESIGN (30-40 seconds)
+------------------------------------------
+1. Start resizing browser window
+   - Slowly drag from right edge
+   - Show how layout adapts
+   - Pause at tablet size (768px)
+   - Continue to mobile size
+
+2. Show mobile view (< 768px)
+   - Card-based layout
+   - All information still visible
+   - Scroll through cards
+   - Show search still works
+   - Show filters still work
+
+3. Optionally resize back to desktop
+   - Show smooth transition
+   - Everything still works
+
+OPTIONAL ENHANCEMENTS
+---------------------
+- Add background music (soft, non-intrusive)
+- Add voice-over explanation
+- Add text overlays highlighting features
+- Add cursor highlights (yellow circle around cursor)
+- Add zoom-in on key interactions
+
+RECORDING TOOLS
+---------------
+
+Windows:
+- Xbox Game Bar (built-in): Win + G
+- OBS Studio (free): https://obsproject.com
+- ShareX (free): https://getsharex.com
+
+Mac:
+- QuickTime Player (built-in)
+- Screen Studio (paid, very smooth)
+- OBS Studio (free)
+
+Online:
+- Loom (free): https://loom.com
+- Screencast-O-Matic (free tier)
+
+RECORDING TIPS
+--------------
+1. Close unnecessary applications
+2. Clear browser cache/restart browser
+3. Use incognito/private mode (clean, no extensions)
+4. Maximize window or use full screen
+5. Hide bookmarks bar (Ctrl/Cmd + Shift + B)
+6. Set browser zoom to 100%
+7. Practice run before recording
+8. Speak clearly if adding voice-over
+9. Keep cursor movements smooth
+10. Don't rush - show features clearly
+
+RECOMMENDED SCRIPT
+------------------
+
+Opening (5 seconds):
+"Token Trading Table - A pixel-perfect Axiom Trade clone"
+
+Desktop Features (30 seconds):
+"Features include sortable columns, advanced filtering, 
+real-time search, and multiple interaction patterns including 
+tooltips, popovers, and modals."
+
+Real-time Updates (15 seconds):
+"Prices update in real-time with smooth color transitions 
+and flash animations indicating price movements."
+
+Responsive Design (30 seconds):
+"The design is fully responsive, seamlessly adapting from 
+desktop to tablet to mobile, maintaining full functionality 
+at all screen sizes down to 320 pixels."
+
+Closing (5 seconds):
+"Built with Next.js 14, TypeScript, and Tailwind CSS."
+
+EDITING (Optional)
+------------------
+If recording is too long:
+- Speed up slow parts (1.2x-1.5x)
+- Cut unnecessary pauses
+- Jump cut between sections
+- Add transitions
+
+Editing tools:
+- DaVinci Resolve (free)
+- iMovie (Mac, free)
+- Windows Video Editor (Windows, built-in)
+- Clipchamp (online, free)
+
+UPLOADING TO YOUTUBE
+---------------------
+
+1. Go to YouTube Studio
+2. Click "Create" > "Upload videos"
+3. Select your video file
+4. Fill in details:
+   
+   Title:
+   "Token Trading Table - Axiom Trade Clone | Next.js 14"
+   
+   Description:
+   "A pixel-perfect replica of Axiom Trade's token discovery table.
+   
+   Features:
+   ✓ Real-time price updates with WebSocket
+   ✓ Interactive elements (Tooltip, Popover, Modal)
+   ✓ Sorting and filtering
+   ✓ Fully responsive (320px to desktop)
+   ✓ Loading states and error boundaries
+   
+   Tech Stack:
+   - Next.js 14 (App Router)
+   - TypeScript (Strict)
+   - Tailwind CSS
+   - Redux Toolkit
+   - React Query
+   - Radix UI
+   
+   GitHub: [Your repo URL]
+   Live Demo: [Your Vercel URL]
+   
+   #NextJS #TypeScript #ReactJS #WebDevelopment"
+   
+   Visibility:
+   - Select "Unlisted" (or "Public" if you prefer)
+   
+   Thumbnail:
+   - Upload custom thumbnail (screenshot of your app)
+   - Recommended size: 1280x720 pixels
+
+5. Click "Next" through all steps
+6. Click "Publish"
+7. Copy the video URL
+
+THUMBNAIL CREATION (Optional)
+------------------------------
+Create an eye-catching thumbnail:
+- Screenshot of your table
+- Add text: "Token Trading Table"
+- Add tech badges: Next.js, TypeScript, etc.
+- Use bright, contrasting colors
+- Make text large and readable
+
+Tools:
+- Canva (free templates)
+- Photoshop
+- GIMP (free)
+- Online thumbnail makers
+
+QUALITY CHECKLIST
+-----------------
+Before uploading, verify:
+
+☐ Video shows all required features
+☐ Duration is 1-2 minutes
+☐ Quality is clear (720p+)
+☐ Cursor movements are smooth
+☐ No personal information visible
+☐ No inappropriate content in browser
+☐ Audio is clear (if included)
+☐ All interactions work properly
+☐ Real-time updates visible
+☐ Responsive design demonstrated
+
+COMMON MISTAKES TO AVOID
+-------------------------
+✗ Video too long (> 2 minutes)
+✗ Video too short (< 1 minute)
+✗ Poor quality/blurry recording
+✗ Cursor moving too fast
+✗ Not showing key features
+✗ Forgetting responsive demo
+✗ Recording with errors visible
+✗ Private video (should be public/unlisted)
+✗ Video deleted after submission
+✗ Wrong video link submitted
+
+ALTERNATIVE: ANIMATED GIF
+--------------------------
+Not recommended but acceptable:
+- Use same recording approach
+- Convert to high-quality GIF
+- Host on GitHub or Imgur
+- Include in repository
+- Lower quality than video
+
+AFTER UPLOADING
+---------------
+1. Copy the video URL
+2. Test the link (open in incognito)
+3. Verify video is accessible
+4. Add URL to submission
+5. Keep video published
+6. Don't delete or private after submission
+
+EXAMPLE TIMESTAMPS
+------------------
+A good 90-second video might look like:
+
+0:00-0:05 - Title/intro screen
+0:05-0:20 - Desktop features (sort/filter/search)
+0:20-0:35 - Interactive elements (tooltip/popover/modal)
+0:35-0:45 - Real-time price updates
+0:45-1:15 - Responsive design demo
+1:15-1:30 - Mobile view and interactions
+
+FINAL TIPS
+----------
+- Be proud of your work!
+- Show it off professionally
+- Highlight unique features
+- Keep it concise
+- Make it engaging
+- Test the link before submitting
+
+Your video is your chance to showcase the effort you put into
+this project. Make it count!
+
+Good luck with your recording! 🎥
+

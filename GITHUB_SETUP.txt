@@ -1,0 +1,261 @@
+GITHUB REPOSITORY SETUP GUIDE
+==============================
+
+Follow these steps to create a clean GitHub repository for your project.
+
+STEP 1: INITIALIZE GIT REPOSITORY
+----------------------------------
+
+# Initialize git in your project folder
+git init
+
+# Check status
+git status
+
+You should see all your project files listed as untracked.
+
+STEP 2: CONFIGURE GIT (If not already configured)
+--------------------------------------------------
+
+# Set your name
+git config --global user.name "Your Name"
+
+# Set your email
+git config --global user.email "your.email@example.com"
+
+# Verify configuration
+git config --list
+
+STEP 3: STAGE ALL FILES
+------------------------
+
+# Add all files to staging
+git add .
+
+# Verify staged files
+git status
+
+All files should now appear in green as "Changes to be committed"
+
+STEP 4: MAKE INITIAL COMMIT
+----------------------------
+
+# Create initial commit with descriptive message
+git commit -m "Initial commit: Token Trading Table - Axiom Trade Clone
+
+Features:
+- Next.js 14 with App Router
+- TypeScript strict mode
+- Tailwind CSS styling
+- Redux Toolkit state management
+- React Query data fetching
+- Radix UI components
+- Real-time price updates
+- Fully responsive (320px+)
+- Atomic design architecture
+- Performance optimized
+
+Includes:
+- All token columns (New, Final Stretch, Migrated)
+- Interactive elements (Tooltip, Popover, Modal, Sorting)
+- Real-time WebSocket mock updates
+- Loading states and error boundaries
+- Comprehensive documentation"
+
+STEP 5: CREATE GITHUB REPOSITORY
+---------------------------------
+
+1. Go to https://github.com
+2. Click the "+" icon in top right
+3. Select "New repository"
+4. Fill in repository details:
+   - Name: token-trading-table (or your preferred name)
+   - Description: Pixel-perfect Axiom Trade token discovery table clone
+   - Visibility: Public (for assignment submission)
+5. DO NOT initialize with README, .gitignore, or license
+6. Click "Create repository"
+
+STEP 6: CONNECT LOCAL TO GITHUB
+--------------------------------
+
+# Add remote repository (replace with your actual URL)
+git remote add origin https://github.com/YOUR_USERNAME/token-trading-table.git
+
+# Verify remote
+git remote -v
+
+# Push to GitHub
+git branch -M main
+git push -u origin main
+
+Your code is now on GitHub!
+
+STEP 7: VERIFY ON GITHUB
+-------------------------
+
+1. Refresh your GitHub repository page
+2. You should see all your files
+3. Check that all folders are present:
+   - app/
+   - components/
+   - hooks/
+   - lib/
+   - store/
+   - types/
+   - public/
+4. Verify documentation files are visible:
+   - DEPLOYMENT.txt
+   - FEATURES.txt
+   - QUICKSTART.txt
+   - PROJECT_SUMMARY.txt
+
+RECOMMENDED: ADD REPOSITORY DESCRIPTION
+---------------------------------------
+
+On your GitHub repository page:
+1. Click "About" (gear icon)
+2. Add description:
+   "Pixel-perfect replica of Axiom Trade's token discovery table. 
+    Built with Next.js 14, TypeScript, Tailwind CSS, Redux Toolkit, 
+    and React Query. Features real-time updates, full responsiveness, 
+    and atomic design architecture."
+3. Add topics/tags:
+   - nextjs
+   - typescript
+   - tailwindcss
+   - redux-toolkit
+   - react-query
+   - radix-ui
+   - token-trading
+   - crypto
+   - defi
+4. Save changes
+
+COMMIT MESSAGE GUIDELINES
+--------------------------
+
+For future commits, use clear, descriptive messages:
+
+Good commit messages:
+✓ "feat: Add token price alert functionality"
+✓ "fix: Resolve mobile scroll issue on iOS"
+✓ "perf: Optimize table rendering with virtualization"
+✓ "docs: Update deployment instructions"
+✓ "style: Improve mobile card layout spacing"
+
+Bad commit messages:
+✗ "update"
+✗ "fix bug"
+✗ "changes"
+✗ "test"
+
+MAKING UPDATES
+--------------
+
+When you make changes:
+
+# Check what changed
+git status
+
+# Stage specific files
+git add path/to/file
+
+# Or stage all changes
+git add .
+
+# Commit with message
+git commit -m "feat: Add new feature description"
+
+# Push to GitHub
+git push
+
+BRANCH WORKFLOW (Optional but Recommended)
+------------------------------------------
+
+For larger features:
+
+# Create new branch
+git checkout -b feature/new-feature
+
+# Make changes and commit
+git add .
+git commit -m "feat: Add new feature"
+
+# Push branch to GitHub
+git push -u origin feature/new-feature
+
+# Create Pull Request on GitHub
+# After review, merge to main
+
+PROTECT YOUR MAIN BRANCH (Recommended)
+---------------------------------------
+
+On GitHub:
+1. Go to Settings > Branches
+2. Add branch protection rule for "main"
+3. Enable:
+   - Require pull request reviews
+   - Require status checks to pass
+   - Require branches to be up to date
+
+GITHUB ACTIONS (Optional)
+--------------------------
+
+Add CI/CD workflow later:
+
+.github/workflows/ci.yml:
+- Run linting
+- Run type checking
+- Run tests
+- Build project
+- Deploy to Vercel
+
+REPOSITORY CHECKLIST
+--------------------
+
+Before considering your repo complete, verify:
+
+✓ All files pushed to GitHub
+✓ No node_modules committed (.gitignore working)
+✓ No .env files committed
+✓ Clean commit history
+✓ Descriptive repository description
+✓ Relevant topics/tags added
+✓ Repository is public
+✓ All documentation files included
+✓ Code is organized and readable
+✓ No console errors in code
+
+COMMON ISSUES & SOLUTIONS
+--------------------------
+
+Issue: "fatal: remote origin already exists"
+Solution: 
+  git remote remove origin
+  git remote add origin YOUR_URL
+
+Issue: "Permission denied (publickey)"
+Solution: 
+  Set up SSH keys or use HTTPS with token
+
+Issue: Files not uploading
+Solution:
+  Check .gitignore isn't excluding them
+  Ensure files are staged (git add)
+
+Issue: Large files rejected
+Solution:
+  GitHub has 100MB file size limit
+  Remove large files from git history
+
+NEXT STEPS
+----------
+
+After GitHub setup:
+1. Deploy to Vercel (links to GitHub automatically)
+2. Add repository URL to your submission
+3. Keep repository public for review
+4. Make any requested changes via commits
+
+Your GitHub repository is now ready for submission! 🎉
+

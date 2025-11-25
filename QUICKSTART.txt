@@ -1,0 +1,126 @@
+QUICK START GUIDE
+=================
+
+Get your Token Trading Table up and running in 5 minutes!
+
+STEP 1: INSTALL DEPENDENCIES
+-----------------------------
+npm install
+
+This will install all required packages:
+- Next.js 14
+- React 18
+- TypeScript
+- Tailwind CSS
+- Redux Toolkit
+- React Query
+- Radix UI components
+- Lucide React icons
+
+STEP 2: RUN DEVELOPMENT SERVER
+-------------------------------
+npm run dev
+
+The application will start at: http://localhost:3000
+
+STEP 3: EXPLORE THE FEATURES
+-----------------------------
+Once the app is running, try:
+
+1. Sorting
+   - Click any column header to sort
+   - Click again to reverse order
+   - Notice the arrow indicators
+
+2. Filtering
+   - Click the "Filters" button
+   - Try different status filters
+   - Toggle "Verified Only" or "Trending Only"
+   - Click "Clear All" to reset
+
+3. Search
+   - Type in the search box
+   - Search by token name, symbol, or address
+   - Notice instant filtering
+
+4. Interactive Elements
+   - Hover over verified badges (tooltip)
+   - Click on market cap values (popover)
+   - Click on holder counts (modal)
+   - Copy token addresses
+
+5. Real-time Updates
+   - Watch prices update automatically
+   - Notice the flash animations (green/red)
+   - Smooth color transitions
+
+6. Responsive Design
+   - Resize your browser window
+   - Try mobile view (< 768px)
+   - Notice the card layout on mobile
+
+STEP 4: BUILD FOR PRODUCTION
+-----------------------------
+npm run build
+
+This creates an optimized production build.
+
+STEP 5: RUN PRODUCTION BUILD
+-----------------------------
+npm start
+
+Test the production build locally before deploying.
+
+DEPLOY TO VERCEL (EASIEST)
+---------------------------
+1. Push to GitHub:
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git remote add origin YOUR_REPO_URL
+   git push -u origin main
+
+2. Visit vercel.com and import your repository
+
+3. Vercel auto-configures everything - just click Deploy!
+
+TESTING CHECKLIST
+-----------------
+☐ Home page loads without errors
+☐ Token table displays with data
+☐ Sorting works on all columns
+☐ Filters apply correctly
+☐ Search finds tokens
+☐ Prices update in real-time
+☐ Hover effects work
+☐ Click interactions work
+☐ Mobile view displays correctly
+☐ No console errors
+
+TROUBLESHOOTING
+---------------
+Q: npm install fails?
+A: Try deleting node_modules and package-lock.json, then run npm install again
+
+Q: Port 3000 already in use?
+A: Kill the process or run: npm run dev -- -p 3001
+
+Q: Page won't load?
+A: Check console for errors, ensure all dependencies installed
+
+Q: Build fails?
+A: Run npm run lint to check for TypeScript errors
+
+Q: Styles not loading?
+A: Clear .next folder and rebuild: rm -rf .next && npm run dev
+
+NEXT STEPS
+----------
+- Review DEPLOYMENT.txt for detailed deployment guide
+- Review FEATURES.txt for complete feature list
+- Customize colors in tailwind.config.ts
+- Add your own token data source
+- Deploy to production
+
+That's it! You're ready to go! 🚀
+

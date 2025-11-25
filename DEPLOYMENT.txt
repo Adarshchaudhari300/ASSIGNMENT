@@ -1,0 +1,274 @@
+TOKEN TRADING TABLE - DEPLOYMENT GUIDE
+======================================
+
+OVERVIEW
+--------
+A pixel-perfect replica of Axiom Trade's token discovery table with real-time updates,
+built with Next.js 14, TypeScript, Tailwind CSS, Redux Toolkit, and React Query.
+
+FEATURES
+--------
+✓ All token columns (New pairs, Final Stretch, Migrated)
+✓ Interactive elements: Popover, Tooltip, Modal, Sorting
+✓ Real-time price updates with WebSocket mock
+✓ Loading states: Skeleton, Shimmer, Progressive loading, Error boundaries
+✓ Fully responsive (320px to desktop)
+✓ Atomic architecture for maximum reusability
+✓ Performance optimized with memoization and infinite scroll
+
+TECH STACK
+----------
+- Next.js 14 (App Router)
+- TypeScript (Strict mode)
+- Tailwind CSS
+- Redux Toolkit (State management)
+- React Query (Data fetching)
+- Radix UI (Accessible components)
+- Lucide React (Icons)
+
+INSTALLATION
+------------
+1. Clone the repository:
+   git clone <your-repo-url>
+   cd ASSIGNMENT
+
+2. Install dependencies:
+   npm install
+   (or yarn install / pnpm install)
+
+3. Run development server:
+   npm run dev
+
+4. Open http://localhost:3000 in your browser
+
+DEPLOYMENT TO VERCEL
+--------------------
+1. Push your code to GitHub:
+   git init
+   git add .
+   git commit -m "Initial commit: Token Trading Table"
+   git remote add origin <your-github-repo-url>
+   git push -u origin main
+
+2. Deploy to Vercel:
+   - Visit https://vercel.com
+   - Click "Import Project"
+   - Select your GitHub repository
+   - Vercel will auto-detect Next.js and configure build settings
+   - Click "Deploy"
+   - Your app will be live at: https://your-project.vercel.app
+
+ALTERNATIVE DEPLOYMENT (Manual)
+-------------------------------
+1. Install Vercel CLI:
+   npm install -g vercel
+
+2. Deploy:
+   vercel
+   (Follow the prompts)
+
+3. For production:
+   vercel --prod
+
+PROJECT STRUCTURE
+-----------------
+ASSIGNMENT/
+├── app/                    # Next.js 14 App Router
+│   ├── layout.tsx         # Root layout
+│   ├── page.tsx           # Home page
+│   ├── providers.tsx      # Redux & React Query providers
+│   ├── globals.css        # Global styles
+│   ├── loading.tsx        # Loading state
+│   ├── error.tsx          # Error boundary
+│   └── not-found.tsx      # 404 page
+├── components/
+│   ├── atoms/             # Base components
+│   │   ├── Button.tsx
+│   │   ├── Badge.tsx
+│   │   ├── Tooltip.tsx
+│   │   ├── Modal.tsx
+│   │   ├── Popover.tsx
+│   │   ├── Dropdown.tsx
+│   │   ├── Input.tsx
+│   │   └── Skeleton.tsx
+│   ├── molecules/         # Composite components
+│   │   ├── ErrorBoundary.tsx
+│   │   ├── MiniChart.tsx
+│   │   ├── PriceDisplay.tsx
+│   │   ├── PercentageChange.tsx
+│   │   ├── TokenInfo.tsx
+│   │   └── TableSkeleton.tsx
+│   └── organisms/         # Complex components
+│       ├── TokenRow.tsx
+│       ├── MobileTokenCard.tsx
+│       ├── TokenFilters.tsx
+│       ├── TokenTableHeader.tsx
+│       ├── TokenTable.tsx
+│       └── ResponsiveTokenTable.tsx
+├── store/                 # Redux store
+│   ├── store.ts
+│   ├── tokenSlice.ts
+│   └── hooks.ts
+├── hooks/                 # Custom hooks
+│   ├── useTokens.ts
+│   └── useWebSocket.ts
+├── lib/                   # Utilities
+│   ├── utils.ts
+│   ├── mock-data.ts
+│   └── websocket-mock.ts
+├── types/                 # TypeScript types
+│   └── token.ts
+└── public/               # Static assets
+
+KEY FEATURES IMPLEMENTED
+------------------------
+1. INTERACTIVE COMPONENTS
+   - Tooltip: Hover over verified badges and info icons
+   - Popover: Click market cap for detailed breakdown
+   - Modal: Click holders count for detailed stats
+   - Sorting: Click any column header to sort
+   - Filters: Status, verified, trending filters
+
+2. REAL-TIME UPDATES
+   - WebSocket mock simulates live price updates
+   - Smooth color transitions on price changes
+   - Flash animations (green for up, red for down)
+
+3. LOADING STATES
+   - Skeleton screens during initial load
+   - Shimmer effect for better UX
+   - Infinite scroll for progressive loading
+   - Error boundaries for graceful error handling
+
+4. PERFORMANCE OPTIMIZATIONS
+   - Memoized components with React.memo
+   - Virtualized rendering with intersection observer
+   - Debounced search input
+   - Optimized re-renders with Redux selectors
+   - Next.js image optimization ready
+   - Code splitting with dynamic imports
+
+5. RESPONSIVE DESIGN
+   - Desktop: Full table view with all columns
+   - Tablet: Adjusted spacing and font sizes
+   - Mobile: Card-based layout (320px+)
+   - Touch-friendly interactions
+   - Optimized for all screen sizes
+
+PERFORMANCE METRICS
+-------------------
+Target: Lighthouse score ≥ 90 on mobile & desktop
+
+Optimization techniques:
+- React.memo for expensive components
+- useCallback for event handlers
+- Efficient Redux selectors
+- Intersection Observer for infinite scroll
+- CSS transitions over JavaScript animations
+- Tailwind CSS for minimal CSS bundle
+
+TESTING LOCALLY
+---------------
+1. Run development server: npm run dev
+2. Test on different viewports:
+   - Desktop: 1920x1080
+   - Tablet: 768x1024
+   - Mobile: 375x667, 320x568
+
+3. Test interactions:
+   - Sorting by different columns
+   - Filtering by status/attributes
+   - Search functionality
+   - Real-time price updates
+   - Infinite scroll
+   - Responsive breakpoints
+
+BUILD FOR PRODUCTION
+--------------------
+1. Build the application:
+   npm run build
+
+2. Start production server:
+   npm start
+
+3. Analyze bundle:
+   npm run build -- --profile
+
+ENVIRONMENT VARIABLES
+---------------------
+Create .env.local for local development (optional):
+# NEXT_PUBLIC_API_URL=https://api.example.com
+
+VIDEO DEMONSTRATION
+-------------------
+Record a 1-2 minute video showing:
+1. Desktop view with all features
+2. Sorting and filtering
+3. Real-time price updates
+4. Interactive elements (tooltip, popover, modal)
+5. Responsive design (resize browser)
+6. Mobile view
+7. Performance (smooth scrolling, no layout shifts)
+
+Upload to YouTube as public/unlisted video.
+
+GITHUB REPOSITORY
+-----------------
+Ensure your repo includes:
+- Clean commit history
+- Descriptive commit messages
+- This deployment guide
+- All source code
+- Package.json with dependencies
+- Vercel deployment configuration
+
+DELIVERABLES CHECKLIST
+----------------------
+☐ GitHub repository with clean commits
+☐ Vercel deployment (live URL)
+☐ YouTube video (1-2 min functionality demo)
+☐ Responsive layout (320px+)
+☐ This deployment guide
+
+SUPPORT & DOCUMENTATION
+-----------------------
+For issues or questions:
+1. Check Next.js documentation: https://nextjs.org/docs
+2. Check Tailwind CSS docs: https://tailwindcss.com/docs
+3. Check Redux Toolkit docs: https://redux-toolkit.js.org
+4. Check React Query docs: https://tanstack.com/query
+
+PRODUCTION CHECKLIST
+--------------------
+Before deploying:
+☐ Test all features locally
+☐ Run npm run build successfully
+☐ Test production build locally (npm start)
+☐ Check responsive design on multiple devices
+☐ Verify all interactions work
+☐ Test error states
+☐ Verify loading states
+☐ Check console for errors
+☐ Run Lighthouse audit
+☐ Optimize images (if any)
+☐ Update metadata in app/layout.tsx
+☐ Set up custom domain (optional)
+
+MAINTAINABILITY
+---------------
+The codebase follows atomic design principles:
+- Atoms: Basic building blocks (Button, Input, Badge)
+- Molecules: Simple combinations (PriceDisplay, TokenInfo)
+- Organisms: Complex components (TokenTable, TokenFilters)
+
+All components are highly reusable and well-documented.
+TypeScript provides type safety throughout.
+Tailwind CSS ensures consistent styling.
+
+CONTACT
+-------
+For questions about this implementation, refer to the code comments
+or review the component documentation.
+
+Built with ❤️ using modern web technologies.
+
